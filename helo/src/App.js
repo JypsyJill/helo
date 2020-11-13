@@ -1,16 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import Auth from './comps/Auth';
+import './index.css';
 
+// import Auth from './comps/Auth';
+// import Dashboard from './comps/Dashboard';
+// import Form from './comps/Form';
+// import Nav from './comps/Nav';
+// import Post from './comps/Post';
+import React, { Component } from 'react';
+export default class App extends Component {
 
-function App() {
+render(){
   return (
-    <div className="App">
-      <Auth/>
+    <div className="Auth">Test 
+    
+      
 
-      {routes}
     </div>
-  );
+  )
 }
-
-export default App;
+}
