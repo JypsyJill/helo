@@ -10,8 +10,16 @@ export default class App extends Component {
 
 render(){
   return (
-    <div className="Auth">Test 
-    
+    <div className="Nav"> Nav
+    <div className="Auth">Auth
+    <div className="Dashboard"> Dashboard
+    <div className="Form"> Form
+    <div className="Post"> Post
+    </div>
+    </div>
+    </div>
+    </div> 
+
       
 
     </div>
