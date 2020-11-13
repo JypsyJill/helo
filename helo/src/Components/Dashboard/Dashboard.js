@@ -2,17 +2,16 @@ import axios from 'axios';
 import React, {Component} from 'react';
 
 class Dashboard extends Component {
-    constructor(){
-        super();
+ 
+    render() {
         
-        render()
+        return(
             
-            return(
-                
-                <>Dashboard</>
-            )
-        }
+            <div>
+                <h1>Dashboard</h1>
+            </div>
+        );
     }
+}
 
-    export default Dashboard;
-    
+export default Dashboard;

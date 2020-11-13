@@ -2,17 +2,16 @@ import axios from 'axios';
 import React, {Component} from 'react';
 
 class Form extends Component {
-    constructor(){
-        super();
+ 
+    render() {
         
-        render()
+        return(
             
-            return(
-                
-                <>Form</>
-            )
-        }
+            <div>
+                <h1>Form</h1>
+            </div>
+        );
     }
+}
 
-    export default Form;
-    
+export default Form;

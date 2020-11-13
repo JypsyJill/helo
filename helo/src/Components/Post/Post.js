@@ -2,17 +2,16 @@ import axios from 'axios';
 import React, {Component} from 'react';
 
 class Post extends Component {
-    constructor(){
-        super();
-
-        render()
+ 
+    render() {
+        
+        return(
             
-            return(
-                
-                <>Post</>
-            )
-        }
+            <div>
+                <h1>Post</h1>
+            </div>
+        );
     }
+}
 
-    export default Post;
-    
+export default Post;

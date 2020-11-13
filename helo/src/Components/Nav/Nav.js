@@ -2,17 +2,16 @@ import axios from 'axios';
 import React, {Component} from 'react';
 
 class Nav extends Component {
-    constructor(){
-        super();
+ 
+    render() {
         
-        render()
+        return(
             
-            return(
-                
-                <>Nav</>
-            )
-        }
+            <div>
+                <h1>Nav</h1>
+            </div>
+        );
     }
+}
 
-    export default Nav;
-    
+export default Nav;

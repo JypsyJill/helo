@@ -2,16 +2,15 @@ import axios from 'axios';
 import React, {Component} from 'react';
 
 class Auth extends Component {
-    constructor(){
-        super();
-
-        
-        render() 
+ 
+        render() {
             
             return(
                 
-                <>Auth</>
-            )
+                <div>
+                    <h1>AUTH</h1>
+                </div>
+            );
         }
     }
 
