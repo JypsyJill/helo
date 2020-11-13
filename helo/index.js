@@ -1,26 +1,21 @@
-require('dotenv').config();
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import {HashRouter} from 'react-router-dom';
 
-const express = require('express');
-const massive = require('massive');
-// const session = require('express-session');
+ReactDOM.render(
+  <HashRouter>
 
-// const controller = require('./controller');
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+  </HashRouter>,
+  document.getElementById('root')
+);
 
-const {CONNECTION_STRING, SERVER_PORT} = process.env;
-const auth = require('./controller');
-
-const app = express(); 
-
-app.use(express.json());
-
-massive({
-    connectionString: CONNECTION_STRING,
-    ssl: {
-        rejectUnauthorized: false
-    }
-}).then( db => {
-    app.set('db', db)
-    console.log(`seriously, if this works, I may give myself permission to take a break`)
-}).catch( err => console.log(err));
-
-app.listen(SERVER_PORT, ()=>console.log(`Take a break. I'm listening on ${SERVER_PORT}`))
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
